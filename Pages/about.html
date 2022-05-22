@@ -4,20 +4,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/about.css">
 </head>
-<body>
+<body id="allcontent">
     <header>
         <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo" alt="austin coding academy logo">
-        <nav>
-            <a class="has-border" href="../index.html">Resume</a>
-            <a class="has-border" href="./about.html">About Me</a>
-            <a class="has-border" href="./blog.html">My Blog</a>
-            <a class="has-border" href="./contact.html">Contact Me</a>
+        <h1 class="myNameHeader">Forrest Jung</h1>
+        <nav class="nav-grid">
+            <a class="navbuttons" id="resumelink" href="../index.html">Resume</a>
+            <a class="navbuttons" id="aboutlink" href="./about.html">About</a>
+            <a class="navbuttons" id="bloglink" href="./blog.html">Blog</a>
+            <a class="navbuttons" id="contactlink" href="./contact.html">Contact</a>
         </nav>
     </header>
-    <div>
+    <div class="content" id="content">
         <h1>About Page</h1>
+        <p class="aboutMe">
+            I was born and raised in Austin, Texas and graduated from 
+            Lake Travis High School. I then moved to Oregon to study 
+            architecture, but found that it wasn't for me. Now I've moved
+            back to Texas where I'm hoping to find my way into the cyber security
+            field while also expanding my knowledge of different coding languages.
+        </p>
+        <h1>Images</h1>
+        <section class="img-grid">
+            <img class="imgAboutone" src="../Images/imgaboutone.JPG" alt="Image 1">
+            <img class="imgAbouttwo" src="../Images/imgabouttwo.jpg" alt="Image 2">
+            <img class="imgAboutthree" src="../Images/imgaboutthree.jpg" alt="Image 3">
+        </section>
+        <section class="socialMedia">
+            <a class="small-text" href="https://austincodingacademy.com/">© Austin Coding Academy</a>
+            <a class="twitter" href="https://www.twitter.com"><img class="twitterLogo" src="../Images/twitterLogo.png"></a>
+            <a class="instagram" href="https://www.instagram.com"><img class="instagramLogo" src="../Images/instagramLogo.png"></a>
+            <a class="facebook" href="https://www.facebook.com"><img class="facebookLogo" src="../Images/facebookLogo.png"></a>
+            <a class="linkedin" href="https://www.linkedin.com"><img class="linkedinLogo" src="../Images/linkedinLogo.png"></a>
+        </section>
     </div>
 </body>
 </html>

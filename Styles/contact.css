@@ -71,8 +71,8 @@ body {
     
     height: 45%;
     width: 15%;
-/*     margin-top: 5%;
-    margin-bottom: 5%; */
+/*     margin-top: 10px;
+    margin-bottom: 10px; */
     border-radius: 25px;
     border: 2px solid #93731a;
 /*     padding-top: auto;
@@ -89,6 +89,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-weight: bolder;
+/*     justify-content: space-evenly; */
   }
 
   nav {
