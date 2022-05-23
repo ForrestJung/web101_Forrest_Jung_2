@@ -495,6 +495,17 @@
       background-color: #cca64e;
   }
 
+  .contactback {
+    background-color: #93731a;
+    color: #ffdd82;
+  }
+
+  .birthday {
+    background-color: #ffdd82;
+    color: #93731a;
+    font-weight: bold;
+  }
+
   .content {
       border-style: solid;
       border-color: #93731a;

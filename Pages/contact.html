@@ -22,7 +22,7 @@
     <div class="content">
         <form action="results.html" method="GET" enctype="multipart/form-data">
                 <div class="email">
-                    <label for="email">Email</label><br>
+                    <label for="email">Email</label>
                     <input type="text" name="email" id="email" required>
                 </div>
 
@@ -52,7 +52,23 @@
                     <textarea name="comments" id="comments" rows="8" cols="50">Please leave a short message describing any comments or questions you have for me.
                     </textarea>
                 </div>
-                <div>
+
+                <div class="contactback">
+                    Would you like to be contacted?
+                    <div>
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="contactme" id="yes">
+                    </div>
+                    <div>
+                        <label for="no">No</label>
+                        <input type="radio" name="contactme" id="no">
+                    </div>
+                </div>
+                <div class="birthday">
+                    <label for="birthday">Birthday</label>
+                    <input type="date" name="birthday" id="birthday">
+                </div>
+                <div class="submit">
                     <button type="submit">Submit</button>
                     <button type="reset">Reset</button>
 
