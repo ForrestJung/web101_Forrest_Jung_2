@@ -735,6 +735,10 @@ header {
 
 }
 
+form {
+  max-width: 100%;
+}
+
 main {
     height: auto;
     width: 100%;
