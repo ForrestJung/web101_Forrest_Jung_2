@@ -1,20 +1,24 @@
 
 
 /* const element = comments */
+const placeForResults = document.getElementById("results")
 
+new URLSearchParams(window.location.search).forEach((value, name) => {
+  placeForResults.append(`${name} : ${value}`)
+  placeForResults.append(document.createElement("br"))
+})
 
-let formsubmitted = () => {
-    let useremail = document.getElementById('email');
-/*         Element.id = 'useremail'; */
-    let usercomments = document.getElementById('comments');
-/*         Element.id = 'usercomments'; */
-    window.alert("Thank You! Your Form Has Been Submitted");
-    console.log("Form Submitted")
-    console.log('useremail')
-    console.log('usercomments')
-    console.log(useremail)
-    console.log(usercomments)
-}
+/* let formsubmitted = () => {
+
+    const placeForResults = document.getElementById("results")
+
+    new URLSearchParams(window.location.search).forEach((value, name) => {
+      placeForResults.append(`${name} : ${value}`)
+      placeForResults.append(document.createElement("br"))
+    })
+
+} */
+
 
 /* function thankYou(formsubmitted) {
     window.alert("Thank You! Your Form Has Been Submitted");

@@ -8,50 +8,56 @@
     <link rel="stylesheet" href="../Styles/contact.css">
     <script src="../JS/contact.js"></script>
 </head>
-<body>
+<body class="all-content">
     <header>
         <img style="float: left;" src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo" alt="austin coding academy logo">
-        <nav>
-            <a class="navbuttons" href="../index.html">Resume</a>
-            <a class="navbuttons" href="./about.html">About Me</a>
-            <a class="navbuttons" href="./blog.html">My Blog</a>
-            <a class="navbuttons" href="./contact.html">Contact Me</a>
+        <h1 class="myNameHeader">Forrest Jung</h1>
+        <nav class="nav-grid">
+            <a class="navbuttons" id="resumelink" href="../index.html">Resume</a>
+            <a class="navbuttons" id="aboutlink" href="./about.html">About</a>
+            <a class="navbuttons" id="bloglink" href="./blog.html">Blog</a>
+            <a class="navbuttons" id="contactlink" href="./contact.html">Contact</a>
         </nav>
     </header>
     <div class="content">
-        <form class="email">
-            <label for="email">Email</label><br>
-            <input type="text" name="email" id="email" required>
-        </form>
-            <div class="largetitle">
-                <p>Where did you hear about me?</p>
-            </div>
-        <form class="inline-content">
-            <div class="classmate">
-                <label for="classmate">Classmate</label>
-                <input type="checkbox" name="classmate" id="classmate">
-            </div>
-            <div class="resumesub">
-                <label for="resumesub">Resume Submission</label>
-                <input type="checkbox" name="resumesub" id="resumesub">
-            </div>
-            <div class="linkedin">
-                <label for="linkedin">LinkedIn</label>
-                <input type="checkbox" name="linkedin" id="linkedin">
-            </div>
-            <div class="codingacademy">
-                <label for="codingacademy">Coding Academy Rec</label>
-                <input type="checkbox" name="codingacademy" id="codingacademy">
-            </div>
-        </form>
-        <form class="comments">
-            <label for="comments">Comments</label><br>
-<!--             <input type="text" name="comments" id="comments"> -->
-            <textarea id="comments" name="comments" rows="8" cols="50">At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
-        </form>
-        <form class="submit">
-            <input type="submit" value="Submit" onclick="formsubmitted(this)">
-        </form>
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+                <div class="email">
+                    <label for="email">Email</label><br>
+                    <input type="text" name="email" id="email" required>
+                </div>
+
+                <div class="largetitle">
+                    <p>Where did you hear about me?</p>
+                </div>
+            <article class="inline-content">
+                <div class="classmate">
+                    <label for="classmate">Classmate</label>
+                    <input type="checkbox" name="classmate" id="classmate">
+                </div>
+                <div class="resumesub">
+                    <label for="resumesub">Resume Submission</label>
+                    <input type="checkbox" name="resumesub" id="resumesub">
+                </div>
+                <div class="linkedincheck">
+                    <label for="linkedincheck">LinkedIn</label>
+                    <input type="checkbox" name="linkedincheck" id="linkedincheck">
+                </div>
+                <div class="ACA">
+                    <label for="ACA">Coding Academy Rec</label>
+                    <input type="checkbox" name="ACA" id="ACA">
+                </div>
+            </article>
+                <div class="comments">
+                    <label for="comments">Comments</label><br>
+                    <textarea name="comments" id="comments" rows="8" cols="50">Please leave a short message describing any comments or questions you have for me.
+                    </textarea>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+
+                </div>
+            </form>
     </div>
 </body>
 </html>
